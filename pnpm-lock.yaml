@@ -500,8 +500,8 @@ importers:
         specifier: 1.6.2
         version: 1.6.2(patch_hash=juyg45ifkipb4jskg7lpym2lj4)
       '@openai/codex':
-        specifier: 0.153.4
-        version: 0.153.4
+        specifier: 0.165.0
+        version: 0.165.0
       acpx:
         specifier: 0.13.1
         version: 0.13.1(patch_hash=zmi2maauog4djnfd2acdrgmyhe)
@@ -3212,6 +3212,47 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@openai/codex@0.165.0':
+    resolution: {integrity: sha512-aiwtQVp2KBhJld966CuU5bVfQ46VNB4mNTl6giX3WGZdt4euI3tv2RUqJpnupPNA8DXHg2z+RoQ0Zfw87dy8Lw==}
+    engines: {node: '>=16'}
+    hasBin: true
+
+  '@openai/codex@0.165.0-darwin-arm64':
+    resolution: {integrity: sha512-MQ/Z0Xw9v08DHunnzodi9NwA844MI3+RO72IM8o0Lr/UemnlEoBMCxpojstxX6mf5ZQwUrIg0yekDd9cFZ29hg==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@openai/codex@0.165.0-darwin-x64':
+    resolution: {integrity: sha512-mxMtlntnUq0Xb8rjvHph3Ws045Q82BLbeKRRdkN70Es9mho/D/Blh1ShZvzQOnsoeVw8lbV9fOLjW1vncoufKQ==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@openai/codex@0.165.0-linux-arm64':
+    resolution: {integrity: sha512-qdrYdcabxn3biX2qTtb/GuuMk20ZAQYxcmY7lHcp6CkAzyqsXbL0vIJFwWJr83/pNM+CUZH4YaTPns2kN7ZIfA==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@openai/codex@0.165.0-linux-x64':
+    resolution: {integrity: sha512-FotDc7bVHwaommtsdDP8PPrH0a5IwC/t8H/LhdEcH4EBqgeYFRCtptiHcuwgvNRCLbTbOyFE/Ur6GzYCljgaSQ==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [linux]
+
+  '@openai/codex@0.165.0-win32-arm64':
+    resolution: {integrity: sha512-6HLE44VQECPITRZN85NCV/w268Fw/083VKe+5ReOKO9wlL6Kyq1j1mLP2vZ3rmr0goG/HOykrJpZZT0aUD1ntg==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@openai/codex@0.165.0-win32-x64':
+    resolution: {integrity: sha512-f5LMyugPSnAovnTnR1N+SNHSTfWZ+ym5A4H3zZHz/zhuMGMGZD8IxUdlSUlEbiENYyPXrJ8G3Jh+CLyzTfQB6Q==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [win32]
+
   '@opentelemetry/api@1.9.1':
     resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
     engines: {node: '>=8.0.0'}
@@ -4754,6 +4795,7 @@ packages:
   '@smithy/core@3.33.3':
     resolution: {integrity: sha512-CsOeKq/9kA3y6VJHt+/+VTCtBaxJ4OTFpgrjIUhPpDIKxBci1k2bJaQASF2h/ELWrulGp+t97DZ0mevfAD8idg==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.5.2':
     resolution: {integrity: sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==}
@@ -11177,6 +11219,33 @@ snapshots:
     optional: true
 
   '@openai/codex@0.153.4-win32-x64':
+    optional: true
+
+  '@openai/codex@0.165.0':
+    optionalDependencies:
+      '@openai/codex-darwin-arm64': '@openai/codex@0.165.0-darwin-arm64'
+      '@openai/codex-darwin-x64': '@openai/codex@0.165.0-darwin-x64'
+      '@openai/codex-linux-arm64': '@openai/codex@0.165.0-linux-arm64'
+      '@openai/codex-linux-x64': '@openai/codex@0.165.0-linux-x64'
+      '@openai/codex-win32-arm64': '@openai/codex@0.165.0-win32-arm64'
+      '@openai/codex-win32-x64': '@openai/codex@0.165.0-win32-x64'
+
+  '@openai/codex@0.165.0-darwin-arm64':
+    optional: true
+
+  '@openai/codex@0.165.0-darwin-x64':
+    optional: true
+
+  '@openai/codex@0.165.0-linux-arm64':
+    optional: true
+
+  '@openai/codex@0.165.0-linux-x64':
+    optional: true
+
+  '@openai/codex@0.165.0-win32-arm64':
+    optional: true
+
+  '@openai/codex@0.165.0-win32-x64':
     optional: true
 
   '@opentelemetry/api@1.9.1': {}
